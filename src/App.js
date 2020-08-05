@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import shuffle from 'lodash.shuffle'
+import HallOfFame, { FAKE_HOF } from './HallOfFame'
 
 import './App.css'
 
@@ -40,7 +41,7 @@ class App extends Component {
             onClick={this.handleCardClick}
           />
         ))}
-        {won && <p>GAGNÉ !</p>}
+        {won && <HallOfFame entries = { FAKE_HOF }/>}
       </div>
     )
   }
