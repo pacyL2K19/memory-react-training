@@ -11,8 +11,12 @@ const SIDE = 6
 const SYMBOLS = '😀🎉💖🎩🐶🐱🦄🐬🌍🌛🌞💫🍎🍌🍓🍐🍟🍿'
 
 class App extends Component {
-  cards = this.generateCards()
-
+  state ={
+    cards : this.generateCards(),
+    currentPair : [],
+    guesses : 0,
+    matchedCardIndices : []
+  }
   generateCards() {
     const result = []
     const size = SIDE * SIDE
