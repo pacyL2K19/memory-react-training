@@ -1,3 +1,3 @@
-# Training In reactJs on Udacity 
+# Training In reactJs
 
 > Feel free to contribute
